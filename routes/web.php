@@ -11,3 +11,6 @@ Route::get('/page', function () {
 Route::get('/about', function () {
     return "about us";
 });
+Route::get('page2',function (){
+   return "page2";
+});
