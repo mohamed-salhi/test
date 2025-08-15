@@ -12,8 +12,8 @@ class PostController extends Controller
 
     public function index()
     {
-        $posts = Post::query()->orderBy('created_at')->get();
-        return view('posts.index', compact('posts'));
+        $posts = Post::query()->with('category')->with('tags')->orderBy('created_at')->get();
+        return view('admin.posts.index', compact('posts'));
     }
 
     public function create()
