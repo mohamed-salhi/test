@@ -68,9 +68,9 @@
 
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav m-auto">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="{{route('home')}}" class="nav-item nav-link active">Home</a>
 
-                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    <a href="{{route('contact')}}" class="nav-item nav-link">Contact Us</a>
                 </div>
             </div>
         </nav>
